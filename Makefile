@@ -1,4 +1,4 @@
-VERSION: $(shell git describe --tags --abbrev=0)-$(shell git rev-parse --short HEAD)
+VERSION=$(shell git describe --tags --abbrev=0)-$(shell git rev-parse --short HEAD)
 TARGETOS=linux
 
 format:
